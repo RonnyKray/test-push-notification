@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "769285086594",
+    "project_id": "test-push-notification-dc5d2",
+    "storage_bucket": "test-push-notification-dc5d2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769285086594:android:90a1de7eb8f4c1d264839b",
+        "android_client_info": {
+          "package_name": "com.testpushnotification.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc39mrDrCpHbkfP4vx4vrJxkwQW_23lq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
