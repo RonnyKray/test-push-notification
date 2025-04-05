@@ -1,0 +1,2 @@
+/Users/aleksandr/Work/pet-projects/app/android/app/.cxx/Debug/z3i30w3y/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/aleksandr/Work/pet-projects/app/android/app/.cxx/Debug/z3i30w3y/arm64-v8a/CMakeFiles/rebuild_cache.dir
