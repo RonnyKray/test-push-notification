@@ -1,17 +1,32 @@
 part of 'runner.dart';
 
 abstract class Runner {
+  late DependencyContainer _container;
+
   Future<void> run() async {
-    await runApplication();
+    _container = await initializeContainer();
+    await runApplication(_container);
   }
 
   @protected
-  Future<void> runApplication();
+  Future<DependencyContainer> initializeContainer();
+
+  @protected
+  Future<void> runApplication(DependencyContainer container);
 }
 
 class AppRunner extends Runner {
   @override
-  Future<void> runApplication() async {
+  Future<DependencyContainer> initializeContainer() async {
+    final container = DependencyContainer();
+    await container.init();
+    return container;
+  }
+
+  @override
+  Future<void> runApplication(
+    DependencyContainer container,
+  ) async {
     try {
       runApp(
         App(),

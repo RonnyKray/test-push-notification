@@ -10,11 +10,23 @@ class DependencyContainer {
 
   Future<void> init() async {
     await Future.wait(
-      [notificationService.initialize()],
+      [
+        getItSetup(),
+      ],
     );
   }
 
   Future<void> dispose() async {
     await GetIt.I.reset();
+  }
+
+  Future<void> getItSetup() async {
+    final getIt = GetIt.I;
+
+    final notificationInstance = NotificationService()..initialize();
+
+    getIt.registerSingleton<NotificationService>(
+      notificationInstance,
+    );
   }
 }
